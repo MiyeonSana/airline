@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyEasy</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="Flyeasy (1).png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/flatpickr.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="logo-section">
+            <img src="Flyeasy (1).png" alt="Logo" class="logo">
+            <div class="logo-text">
+                <span class="logo-name">FlyEasy</span>
+                <span class="tagline">Your Airline Booking Companion</span>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <div class="nav-item">
+                <a href="#">Book</a>
+                <div class="dropdown">Book information</div>
+            </div>
+            <div class="nav-item">
+                <a href="#">Manage</a>
+                <div class="dropdown">Manage information</div>
+            </div>
+            <div class="nav-item">
+                <a href="#">Travel Info</a>
+                <div class="dropdown">Travel Info information</div>
+            </div>
+            <div class="nav-item">
+                <a href="#">Explore</a>
+                <div class="dropdown">Explore information</div>
+            </div>
+            <div class="nav-item">
+                <a href="#">About</a>
+                <div class="dropdown">About information</div>
+            </div>
+        </nav>
+        <div class="icons">
+            <i class="fa-solid fa-user" id="account-icon"></i>
+            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+            <input type="text" class="search-bar" id="search-bar" placeholder="Search...">
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="slideshow-container">
+            <img src="plane4.jpg" class="slide" alt="Image 1">
+            <img src="plane2.jpg" class="slide" alt="Image 2">
+            <img src="plane3.jpg" class="slide" alt="Image 3">
+        </div>
+         <div class="booking-details">
+            <div class="input-group">
+                <label for="origin"><i class="fas fa-plane-departure"></i> Origin</label>
+                <input type="text" id="origin" placeholder="Select Origin">
+            </div>
+            <div class="input-group">
+                <label for="destination"><i class="fas fa-plane-arrival"></i> Destination</label>
+                <input type="text" id="destination" placeholder="Select Destination">
+            </div>
+            <div class="up">
+                <div class="input-group">
+                    <label for="trip-preference"><i class="fas fa-map-marker-alt"></i> Trip Preference</label>
+                    <select id="trip-preference">
+                        <option value="round-trip">Round Trip</option>
+                        <option value="one-way">One Way</option>
+                    </select>
+                </div>
+                </div>
+            <div class="input-group">
+                <label for="depart-date"><i class="fas fa-calendar-alt"></i> Depart Date</label>
+                <input type="text" id="depart-date" placeholder="Departing on">
+            </div>
+            <div class="input-group">
+                <label for="return-date"><i class="fas fa-calendar-alt"></i> Return Date</label>
+                <input type="text" id="return-date" placeholder="Returning on">
+            </div>
+            <div class="input-group">
+                <label for="adults"><i class="fas fa-user"></i> Adults</label>
+                <input type="number" id="adults" placeholder="1">
+            </div>
+            <div class="input-group">
+                <label for="children"><i class="fas fa-child"></i> Children</label>
+                <input type="number" id="children" placeholder="0">
+            </div>
+            <div class="input-group">
+                <label for="infants"><i class="fas fa-baby"></i> Infants</label>
+                <input type="number" id="infants" placeholder="0">
+            </div>
+            <div class="input-group">
+                <label for="promo-code"><i class="fas fa-tag"></i>Enter Promo Code</label>
+                <input type="text" id="promo-code" placeholder="Promo Code (Optional)">
+            </div>
+            <button id="search-flights">Search Flights</button>
+        </div>
+    </div>
+    <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: -7%; font-weight: bolder;" align="center">Book cheap flights from </h2>
+    <div class="cities-container">
+        <div class="city" data-city="Manila">Manila</div>
+        <div class="city" data-city="Cebu">Cebu</div>
+        <div class="city" data-city="Seoul">Seoul</div>
+        <div class="city" data-city="Taipei">Taipei</div>
+    </div>
+    
+    <div class="details-container">
+        <!-- Details for each city will be dynamically populated here -->
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/flatpickr.min.js"></script>
+    <script src="homepage.js"></script>
+</body>
+</html>
